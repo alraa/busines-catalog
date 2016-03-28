@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta charset="utf-8">
+    <title>Бизнес каталог – Страница компании</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <!-- BEGIN .main-wrapper -->
+    <div class="main-wrapper">
+        <!-- BEGIN .header-wrapper -->
+        <div class="header-wrapper">
+            <header>
+                <div class="header-top-line"></div>
+                <div class="header container clear-fix">
+                    <div class="logo">
+                        <a href="javascript:void(0)" class="logo__link">
+                            <span class="logo__top label label_bottom">Бизнес</span>
+                            <span class="logo__bottom">каталог</span>
+                        </a>
+                    </div>
+                    <div class="header-description-wrapper">
+                        <div class="header-description">
+                            <span>Каталог компаний по приему и переработке вторсырья в России. Узнайте где принимают вторсырье в Вашем городе.</span>
+                        </div>
+                    </div>
+
+                    <div class="header-auth-wrapper">
+                        <div class="header-auth">
+                            <a href="javascript:void(0)">Личный кабинет</a>
+                        </div>
+                    </div>
+
+                    <div class="header-button-wrapper">
+                        <a href="javascript:void(0)" class="header-button button">Добавить компанию</a>
+                    </div>
+                </div>
+
+                <div class="header-search-wrapper">
+                    <div class="header-search container">
+                        <form action="/" class="header-search__form">
+                            <div class="header-search__field-box">
+                                <select name="category">
+                                    <option disabled selected>Любая категория</option>
+                                    <option value="category1">Категория1</option>
+                                    <option value="category2">Категория2</option>
+                                    <option value="category3">Категория3</option>
+                                    <option value="category4">Категория4</option>
+                                </select>
+                            </div>
+                            <div class="header-search__field-box">
+                                <input type="text" class="header-search__input" placeholder="Макулатура">
+                            </div>
+                            <div class="header-search__field-box">
+                                <select name="city">
+                                    <option value="city1">Москва</option>
+                                    <option value="city3">Рязань</option>
+                                    <option value="city4">Челябинск</option>
+                                    <option value="city2">Нягань</option>
+                                </select>
+                            </div>
+                            <div class="header-search__field-box">
+                                <input type="text" name="search" class="header-search__input header-search__input_search" placeholder="Поиск">
+                                <button type="submit" class="button-submit header-search__submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </header>
+        </div>
+        <!-- END .header-wrapper -->
+
+        <!-- BEGIN main.company-page -->
+        <main class="company-page">
+            <div class="top-banner-wrapper container">
+                <div class="top-banner banner">
+                    <div class="label label_top">Директ</div>
+                </div>
+            </div>
+            <div class="container clear-fix">
+                <aside>
+                    <div class="company-address">
+                        <div class="company-address__buttons">
+                            <a href="javascript:void(0)" class="company-address__button company-address__button_reach"><i class="fa fa-map-signs"></i>Как добраться</a>
+                            <a href="javascript:void(0)" class="company-address__button company-address__button_save"><i class="fa fa-star-o"></i>Сохранить</a>
+                            <a href="javascript:void(0)" class="company-address__button company-address__button_share"><i class="fa fa-paper-plane-o"></i>Поделиться</a>
+                        </div>
+                        <div class="company-address__map" id="company-address__map"></div>
+                        <div class="company-address-wrapper clear-fix">
+                            <div class="company-address__address">Москва, ул. Зеленоградская, 8</div>
+                            <ul class="company-address__near-objects-list">
+                                <li class="company-address__near-object clear-fix">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span class="company-address__near-object-title">Речной Вокзал</span>
+                                    <span class="company-address__near-object-distance">2,9 км</span>
+                                </li>
+                                <li class="company-address__near-object clear-fix">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span class="company-address__near-object-title">Водный Стадион</span>
+                                    <span class="company-address__near-object-distance">3,4 км</span>
+                                </li>
+                                <li class="company-address__near-object clear-fix">
+                                    <i class="fa fa-map-marker"></i>
+                                    <span class="company-address__near-object-title">Петровско-Разумовская</span>
+                                    <span class="company-address__near-object-distance">4,6 км</span>
+                                </li>
+                            </ul>
+                            <a href="javascript:void(0)" class="button company-address__add-photo">Добавить фото</a>
+                        </div>
+                    </div>
+                    <div class="right-banner banner">
+                        <div class="label label_top">Баннер</div>
+                    </div>
+                </aside>
+                <div class="content clear-fix">
+                    <!-- BEGIN  .breadcrumbs-company-wrapper-->
+                    <div class="breadcrumbs-company-wrapper">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__item">
+                              <a href="javascript:void(0)" class="breadcrumbs__link">Москва</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                               <a href="javascript:void(0)" class="breadcrumbs__link">Полимерные материалы </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                               <a href="javascript:void(0)" class="breadcrumbs__link">Прием вторсырья</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                               <a href="javascript:void(0)" class="breadcrumbs__link">Архивные услуги</a>
+                            </li>
+                        </ul>
+                        <div class="company">
+                            <h1 class="company__title">Макулатура</h1>
+                            <div class="company__images">
+                                <a href="img/example/service2.jpg" class="company__img-link fancybox" rel="group">
+                                    <img src="img/example/service2.jpg" alt="company image" class="company__img">
+                                </a>
+                                <a href="img/example/service1.jpg" class="company__img-link fancybox" rel="group">
+                                    <img src="img/example/service1.jpg" alt="company image" class="company__img">
+                                </a>
+                                <a href="img/service-no-image.jpg" class="company__img-link fancybox" rel="group">
+                                    <img src="img/service-no-image.jpg" alt="company image" class="company__img">
+                                </a>
+                            </div>
+                            <div class="company__description">
+                                <p>Компания ООО "Макулатура" работает на рынке вторсырья более 10 лет. Занимаем сбором и переработкой макулатуры, пластика, пленки. Уничтожаем бухгалтерские документы. Профессиональный штат сотрудников.Информация от владельца</p>
+                            </div>
+                            <div class="company__info">
+                                <div class="company__work-time"><i class="fa fa-clock-o"></i> Круглосуточно</div>
+                                <a href="tel:+79267840959" class="company__phone"><i class="fa fa-phone"></i>+7 (926) 784-09-59</a>
+                                <a href="javascript:void(0)" target="_blank" class="company__site">makylatyra.ru</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END .breadcrumbs-company-wrapper -->
+
+                    <!-- BEGIN .comments-wrapper-->
+                    <div class="comments-wrapper">
+                        <div class="comments">
+                            <h2 class="comments__title">Отзывы</h2>
+                            <div class="comments__sub-title">Оцените это место</div>
+                            <i class="fa fa-thumbs-o-up"></i>
+                            <i class="fa fa-thumbs-o-down"></i>
+                            <a href="#comments-form" class="comments__send-comment button anchor-link">Оставить отзыв</a>
+                        </div>
+                        <div class="comments-list">
+                            <div class="comments-list__count">1 отзыв</div>
+                            <div class="comments-item">
+                                <div class="comments-item__author">intelcapital</div>
+                                <div class="comments-item__date">5 марта 2016</div>
+                                <div class="comments-item__msg clear-fix">
+                                    <i class="fa fa-thumbs-o-up"></i>
+                                    <p>Компания ООО "Макулатура" работает на рынке вторсырья более 10 лет. Занимаем сбором и переработкой макулатуры, пластика, пленки. Уничтожаем бухгалтерские документы. Профессиональный штат сотрудников. Информация от владельца.</p>
+                                </div>
+                            </div>
+                            <div class="comments-item">
+                                <div class="comments-item__author">intelcapital</div>
+                                <div class="comments-item__date">5 марта 2016</div>
+                                <div class="comments-item__msg clear-fix">
+                                    <i class="fa fa-thumbs-o-down"></i>
+                                    <p>Компания ООО "Макулатура" работает на рынке вторсырья более 10 лет. Занимаем сбором и переработкой макулатуры, пластика, пленки. Уничтожаем бухгалтерские документы. Профессиональный штат сотрудников. Информация от владельца.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="/" class="comments-form clear-fix" id="comments-form">
+                            <div class="field-box">
+                                <label for="comments-name">Ваше имя, наименование организации</label>
+                                <input type="text" name="comments-name" id="comments-name">
+                                <div class="validation-msg">Ошибка</div>
+                            </div>
+                            <div class="field-box">
+                                <label for="comments-msg">Отзыв о работе компании</label>
+                                <textarea name="comments-msg" id="comments-msg"></textarea>
+                                <div class="validation-msg">Ошибка</div>
+                            </div>
+                            <div class="comments-form__rate">
+                                <div class="comments-form__rate-title">Оцените это место</div>
+                                <label class="comments-form__rate-good-label" title="Понравилось">
+                                    <input type="radio" name="comments-rate" id="comments-form__rate-good" required>
+                                    <i class="fa fa-thumbs-o-up"></i>
+                                </label>
+                                <label class="comments-form__rate-bad-label" title="Не понравилось">
+                                    <input type="radio" name="comments-rate" id="comments-form__rate-bad" required>
+                                    <i class="fa fa-thumbs-o-down"></i>
+                                </label>
+                            </div>
+                            <button type="submit" class="button-submit" id="send-comment">Добавить отзыв</button>
+
+                        </form>
+                    </div>
+                    <!-- END .comments-wrapper -->
+                </div>
+            </div>
+
+
+        </main>
+        <!-- END main.company-page -->
+
+        <div class="h-footer"></div>
+    </div>
+    <!-- END .main-wrapper -->
+
+    <!-- BEGIN footer -->
+    <footer>
+        <div class="footer-nav-wrapper">
+            <nav class="container">
+                <ul class="footer-nav">
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Подать объявление</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Объявления</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Магазины </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Помощь </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Безопасность </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Реклама на сайте</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">О компании</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Вакансии</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Мобильное приложение</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copy container">
+            © Бизнес каталог — сайт объявлений. Использование сайта, в том числе подача объявлений, означает согласие с<br> пользовательским соглашением. Оплачивая услуги на сайте, вы принимаете оферту. Информация о cookies.
+        </div>
+    </footer>
+    <!-- END footer -->
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
