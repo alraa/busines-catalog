@@ -1,5 +1,8 @@
 $(window).load(function(){
 
+    /*Form styler*/
+    $('select').styler();
+
     /*Yandex maps*/
     ymaps.ready(init);
     var map;
@@ -11,6 +14,8 @@ $(window).load(function(){
         });
         map.behaviors.disable('scrollZoom');
     }
+
+
 
 });
 

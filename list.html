@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta charset="utf-8">
+    <title>Бизнес каталог – Список</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <!-- BEGIN .main-wrapper -->
+    <div class="main-wrapper">
+        <!-- BEGIN .header-wrapper -->
+        <div class="header-wrapper">
+            <header>
+                <div class="header-top-line"></div>
+                <div class="header container clear-fix">
+                    <div class="logo">
+                        <a href="javascript:void(0)" class="logo__link">
+                            <span class="logo__top label label_bottom">Бизнес</span>
+                            <span class="logo__bottom">каталог</span>
+                        </a>
+                    </div>
+                    <div class="header-description-wrapper">
+                        <div class="header-description">
+                            <span>Каталог компаний по приему и переработке вторсырья в России. Узнайте где принимают вторсырье в Вашем городе.</span>
+                        </div>
+                    </div>
+
+                    <div class="header-auth-wrapper">
+                        <div class="header-auth">
+                            <a href="javascript:void(0)">Личный кабинет</a>
+                        </div>
+                    </div>
+
+                    <div class="header-button-wrapper">
+                        <a href="javascript:void(0)" class="header-button button">Добавить компанию</a>
+                    </div>
+                </div>
+
+                <div class="header-search-wrapper">
+                    <div class="header-search container">
+                        <form action="/" class="header-search__form">
+                            <div class="header-search__field-box">
+                                <select name="category">
+                                    <option disabled selected>Любая категория</option>
+                                    <option value="category1">Категория1</option>
+                                    <option value="category2">Категория2</option>
+                                    <option value="category3">Категория3</option>
+                                    <option value="category4">Категория4</option>
+                                </select>
+                            </div>
+                            <div class="header-search__field-box">
+                                <input type="text" class="header-search__input" placeholder="Макулатура">
+                            </div>
+                            <div class="header-search__field-box">
+                                <select name="city">
+                                    <option value="city1">Москва</option>
+                                    <option value="city3">Рязань</option>
+                                    <option value="city4">Челябинск</option>
+                                    <option value="city2">Нягань</option>
+                                </select>
+                            </div>
+                            <div class="header-search__field-box">
+                                <input type="text" name="search" class="header-search__input header-search__input_search" placeholder="Поиск">
+                                <button type="submit" class="header-search__submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </header>
+        </div>
+        <!-- END .header-wrapper -->
+
+        <!-- BEGIN main.list-page -->
+        <main class="list-page">
+            <div class="top-banner-wrapper container">
+                <div class="top-banner banner">
+                    <div class="label label_top">Директ</div>
+                </div>
+            </div>
+            <div class="container clear-fix">
+                <aside>
+                    <div class="social banner">
+                        <div class="label label_top">Соц ВК</div>
+                    </div>
+                    <div class="right-banner banner">
+                        <div class="label label_top">Баннер</div>
+                    </div>
+                </aside>
+                <div class="content clear-fix">
+                    <div class="services">
+                        <a class="service service_premium clear-fix" href="javascript:void(0)">
+                            <img src="img/example/service1.jpg" alt="service1" class="service__img">
+                            <div class="service__title">Вывезем Макулатуру мс-5Б. Оплата по факту</div>
+                            <div class="service__price">29 000 руб.</div>
+                            <div class="service__detail">Предложения услуг</div>
+                            <div class="service__detail">Частное лицо (м. Аэропорт)</div>
+                            <div class="service__detail">Сегодня 14:14</div>
+                            <div class="service__favorite"><i class="fa fa-star-o"></i></div>
+                        </a>
+                        <a class="service service_premium clear-fix" href="javascript:void(0)">
+                            <img src="img/example/service2.jpg" alt="service2" class="service__img">
+                            <div class="service__title">Вывезем Макулатуру мс-5Б. Оплата по факту</div>
+                            <div class="service__price">29 000 руб.</div>
+                            <div class="service__detail">Предложения услуг</div>
+                            <div class="service__detail">Частное лицо (м. Аэропорт)</div>
+                            <div class="service__detail">Сегодня 14:14</div>
+                            <div class="service__favorite"><i class="fa fa-star-o"></i></div>
+                        </a>
+                        <a class="service clear-fix" href="javascript:void(0)">
+                            <img src="img/example/service3.jpg" alt="service3" class="service__img">
+                            <div class="service__title">Вывезем Макулатуру мс-5Б. Оплата по факту</div>
+                            <div class="service__price">29 000 руб.</div>
+                            <div class="service__detail">Предложения услуг</div>
+                            <div class="service__detail">Частное лицо (м. Аэропорт)</div>
+                            <div class="service__detail">Сегодня 14:14</div>
+                            <div class="service__favorite"><i class="fa fa-star-o"></i></div>
+                        </a>
+                        <a class="service clear-fix" href="javascript:void(0)">
+                            <img src="img/service-no-image.jpg" alt="service4" class="service__img">
+                            <div class="service__title">Вывезем Макулатуру мс-5Б. Оплата по факту</div>
+                            <div class="service__price">29 000 руб.</div>
+                            <div class="service__detail">Предложения услуг</div>
+                            <div class="service__detail">Частное лицо (м. Аэропорт)</div>
+                            <div class="service__detail">Сегодня 14:14</div>
+                            <div class="service__favorite"><i class="fa fa-star-o"></i></div>
+                        </a>
+                        <a class="service clear-fix" href="javascript:void(0)">
+                            <img src="img/service-no-image.jpg" alt="service5" class="service__img">
+                            <div class="service__title">Вывезем Макулатуру мс-5Б. Оплата по факту</div>
+                            <div class="service__price">29 000 руб.</div>
+                            <div class="service__detail">Предложения услуг</div>
+                            <div class="service__detail">Частное лицо (м. Аэропорт)</div>
+                            <div class="service__detail">Сегодня 14:14</div>
+                            <div class="service__favorite"><i class="fa fa-star-o"></i></div>
+                        </a>
+                    </div>
+                    <div class="pagination clear-fix">
+                        <ul class="pagination__list">
+                            <li class="pagination__item pagination__item_selected">
+                                <a href="javascript:void(0)" class="pagination__link">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">4</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">5</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">6</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">7</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">8</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">9</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="javascript:void(0)" class="pagination__link">10</a>
+                            </li>
+                        </ul>
+                        <a href="javascript:void(0)" class="pagination__button pagination__button_previous"><i class="fa fa-long-arrow-left"></i>Предыдущая</a>
+                        <a href="javascript:void(0)" class="pagination__button pagination__button_next">Следующая страница<i class="fa fa-long-arrow-right"></i></a>
+                    </div>
+                    <div class="banner bottom-banner">
+                        <div class="label label_top">Директ</div>
+                    </div>
+                    <div class="categories clear-fix">
+                        <section class="category">
+                            <h3 class="category__title">Макулатура</h3>
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Билеты и путешествия</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Велосипеды</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Книги и журналы</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Коллекционирование</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Инструменты</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Охота и рыбалка</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Спорт и отдых</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Коллекционирование</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Инструменты</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Охота и рыбалка</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="category">
+                            <h3 class="category__title">Пластик</h3>
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Билеты и путешествия</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Велосипеды</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Книги и журналы</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Коллекционирование</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Инструменты</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Охота и рыбалка</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Спорт и отдых</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Коллекционирование</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Инструменты</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Охота и рыбалка</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="category">
+                            <h3 class="category__title">Пленка</h3>
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Билеты и путешествия</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Велосипеды</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Книги и журналы</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Коллекционирование</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Инструменты</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Охота и рыбалка</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Спорт и отдых</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Коллекционирование</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Инструменты</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Охота и рыбалка</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="category">
+                            <h3 class="category__title">Металл</h3>
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Билеты и путешествия</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Велосипеды</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Книги и журналы</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Коллекционирование</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Инструменты</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Охота и рыбалка</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Спорт и отдых</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Коллекционирование</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Инструменты</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Охота и рыбалка</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="category">
+                            <h3 class="category__title">Стекло</h3>
+                            <ul class="category__list">
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Билеты и путешествия</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Велосипеды</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Книги и журналы</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Коллекционирование</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Инструменты</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Охота и рыбалка</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Спорт и отдых</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Коллекционирование</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Инструменты</a>
+                                </li>
+                                <li class="category__item">
+                                    <a href="javascript:void(0)" class="category__link">Охота и рыбалка</a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+
+        </main>
+        <!-- END main.list-page -->
+
+        <div class="h-footer"></div>
+    </div>
+    <!-- END .main-wrapper -->
+
+    <!-- BEGIN footer -->
+    <footer>
+        <div class="footer-nav-wrapper">
+            <nav class="container">
+                <ul class="footer-nav">
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Подать объявление</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Объявления</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Магазины </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Помощь </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Безопасность </a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Реклама на сайте</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">О компании</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Вакансии</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="javascript:void(0)" class="footer-nav__link">Мобильное приложение</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copy container">
+            © Бизнес каталог — сайт объявлений. Использование сайта, в том числе подача объявлений, означает согласие с<br> пользовательским соглашением. Оплачивая услуги на сайте, вы принимаете оферту. Информация о cookies.
+        </div>
+    </footer>
+    <!-- END footer -->
+
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
